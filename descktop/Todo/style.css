@@ -1,0 +1,6 @@
+#main-section{
+    border:5px solid rgb(184, 0, 0);
+    height: 417px;
+    display: flex;
+    justify-content: center;
+}

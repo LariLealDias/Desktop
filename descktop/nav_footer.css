@@ -1,0 +1,49 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#nav{
+    border:2px solid rgb(0, 0, 0);
+    display: flex;
+
+}
+
+.nav-title{
+    margin: 10px;
+    border:2px solid rgb(206, 175, 0);
+
+}
+
+.nav-tabs{
+    border:2px solid rgb(2, 155, 134);
+    margin: 10px 0px 10px 1100px;
+
+
+}
+
+
+
+
+
+#footer{
+    display: flex;
+    justify-content: right;
+    border:2px solid rgb(124, 110, 160);
+    height: 50px;
+}
+
+.author-photo img{
+    border:2px solid rgb(36, 24, 68);
+    width: 30px;
+    margin: 8px;
+}
+
+.vetor-contact img{
+    border:2px solid rgb(33, 173, 5);
+    width: 30px;
+    margin: 8px;
+}

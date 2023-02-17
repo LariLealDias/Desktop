@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="../../img/foto.jpg">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/descktop/nav_footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav"> 
+            <div class="nav-title">
+                <h2><a href="/descktop/index.html">Desktop</a></h2>
+            </div>
+            <div class="nav-tabs">
+                <p><a href="/descktop/Calculator/index.html">Calculadora</a></p>
+                <p><a href="/descktop/Pomodoro/index.html">Pomodoro</a></p>
+                <p><a href="/descktop/Todo/index.html">To do</a></p>
+            </div>
+        </nav>
+    </header>
+
+   
+
+    <div id="box">
+        <div id="div-container-calculator", class="container-calculator">
+    
+            <p class="result" id="visor" value="0"></p>
+    
+            <div class="container-calculator-button">
+                <button class="btn operator span2" id="clearAll" onclick="clearAllInVisor()">AC</button>
+                <button class="btn operator" onclick="clearLessOne()">C</button>
+                <button class="btn operator" onclick="insertButtonsIntoVisor('/')">/</button>
+                <button class="btn" onclick="insertButtonsIntoVisor('7')">7</button>
+                <button class="btn" onclick="insertButtonsIntoVisor('8')">8</button>
+                <button class="btn" onclick="insertButtonsIntoVisor('9')">9</button>
+                <button class="btn operator" onclick="insertButtonsIntoVisor('x')">x</button>
+                <button class="btn" onclick="insertButtonsIntoVisor('4')">4</button>
+                <button class="btn" onclick="insertButtonsIntoVisor('5')">5</button>
+                <button class="btn" onclick="insertButtonsIntoVisor('6')">6</button>
+                <button class="btn operator" onclick="insertButtonsIntoVisor('-')">-</button>
+                <button class="btn" onclick="insertButtonsIntoVisor('1')">1</button>
+                <button class="btn" onclick="insertButtonsIntoVisor('2')">2</button>
+                <button class="btn" onclick="insertButtonsIntoVisor('3')">3</button>
+                <button class="btn operator" onclick="insertButtonsIntoVisor('+'); soma()" >+</button>
+                <button class="btn span3" onclick="insertButtonsIntoVisor('0')">0</button>
+                <button class="btn operator">=</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer id="footer">
+        <div class="author-photo" alt="imagem da autora com cabelo castanhos, pele clara e blusa vermelha">
+            <img src="/img/foto.jpg">
+        </div>
+        <div class="vetor-contact">
+            <a href="https://github.com/LariLealDias">
+                <img src="/img/github-preenchido.png" alt="logo GitHub">
+            </a>
+        </div>
+        <div class="vetor-contact">
+            <a href="https://www.linkedin.com/in/larissa-leal-dias-408455157/"></a>
+            <img src="/img/linkedin-preenchido.png" alt="logo Linkedin">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

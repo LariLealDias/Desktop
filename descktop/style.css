@@ -1,0 +1,50 @@
+#container-main{
+    border:2px solid rgb(206, 175, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-main div{
+    margin: 60px;
+}
+
+#main-section{
+    border:5px solid rgb(184, 0, 0);
+    height: 417px;
+    display: flex;
+    justify-content: center;
+}
+
+#calculator{
+    border:2px solid rgb(38, 179, 108);
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pomodoro{
+    border:2px solid rgb(99, 1, 69);
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo{
+    border:2px solid rgb(128, 14, 14);
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
