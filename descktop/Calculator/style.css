@@ -1,7 +1,3 @@
-*{
-    margin: 0;
-    font-family: 'JetBrains Mono', monospace;
-}
 
 #box{
     display: flex;
@@ -9,7 +5,9 @@
     justify-content: center;
     padding: 35px;
     background: radial-gradient(circle, #150420 15%, rgb(82, 80, 110) 100%);
-    height: 411px;
+    height: 357px;
+    font-family: 'JetBrains Mono', monospace;
+    flex: 1;
 
 }
 
@@ -17,9 +15,9 @@
 #div-container-calculator{
     border:20px solid rgb(52, 40, 83);
     background-color: rgb(52, 40, 83) ;
-    width: 20%;
+    width: 15%;
     border-radius: 25px ;
-    height: 360px;
+    height: 330px;
 }
 
 .result{
@@ -27,7 +25,7 @@
     line-height: 140px;
     text-align: right;
     padding: 5px;
-    height: 90px;
+    height: 80px;
     font-size: 20px;
     border-radius: 15px;
     border-style: none;
@@ -51,7 +49,7 @@
 }
 .btn{
     font-size:1em;
-    height: 49px;
+    height: 40px;
     border-radius: 15px;
     border-style: none;
     margin: 2px;
