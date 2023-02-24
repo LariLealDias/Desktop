@@ -16,7 +16,7 @@
     <header id="header">
         <nav id="nav"> 
             <div class="nav-title">
-                <h2><a href="/descktop/index.html">Desktop</a></h2>
+                <h2><a href="/descktop/index.html">¤ Desktop ¤</a></h2>
             </div>
             <div class="nav-tabs">
                 <li><a href="/descktop/Calculator/index.html">Calculadora</a></li>
@@ -31,25 +31,29 @@
     <div id="box">
         <div id="div-container-calculator", class="container-calculator">
     
-            <p class="result" id="visor" value="0"></p>
+            <div id="visor" data-visor>
+                <div id="last-operation" data-visor-last-operation></div>
+                <div id="current-operation"data-visor-current-operation></div>
+            </div>
     
             <div class="container-calculator-button">
-                <button class="btn operator span2" id="clearAll" onclick="clearAllInVisor()">AC</button>
-                <button class="btn operator" onclick="clearLessOne()">C</button>
-                <button class="btn operator" onclick="insertButtonsIntoVisor('/')">/</button>
-                <button class="btn" onclick="insertButtonsIntoVisor('7')">7</button>
-                <button class="btn" onclick="insertButtonsIntoVisor('8')">8</button>
-                <button class="btn" onclick="insertButtonsIntoVisor('9')">9</button>
-                <button class="btn operator" onclick="insertButtonsIntoVisor('x')">x</button>
-                <button class="btn" onclick="insertButtonsIntoVisor('4')">4</button>
-                <button class="btn" onclick="insertButtonsIntoVisor('5')">5</button>
-                <button class="btn" onclick="insertButtonsIntoVisor('6')">6</button>
-                <button class="btn operator" onclick="insertButtonsIntoVisor('-')">-</button>
-                <button class="btn" onclick="insertButtonsIntoVisor('1')">1</button>
-                <button class="btn" onclick="insertButtonsIntoVisor('2')">2</button>
-                <button class="btn" onclick="insertButtonsIntoVisor('3')">3</button>
-                <button class="btn operator" onclick="insertButtonsIntoVisor('+'); soma()" >+</button>
-                <button class="btn span3" onclick="insertButtonsIntoVisor('0')">0</button>
+                <button class="btn operator span2" id="clearAll" data-btn="AC">AC</button>
+                <button class="btn operator" data-btn="C">C</button>
+                <button class="btn operator" data-btn="/">/</button>
+                <button class="btn" data-btn="7">7</button>
+                <button class="btn" data-btn="8">8</button>
+                <button class="btn" data-btn="9">9</button>
+                <button class="btn operator" data-btn="x">x</button>
+                <button class="btn" data-btn="4">4</button>
+                <button class="btn" data-btn="5">5</button>
+                <button class="btn" data-btn="6">6</button>
+                <button class="btn operator" data-btn="-">-</button>
+                <button class="btn" data-btn="1">1</button>
+                <button class="btn" data-btn="2">2</button>
+                <button class="btn" data-btn="3">3</button>
+                <button class="btn operator" data-btn="+">+</button>
+                <button class="btn" data-btn=".">.</button>
+                <button class="btn span3" data-btn="0">0</button>
                 <button class="btn operator">=</button>
             </div>
         </div>
