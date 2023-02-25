@@ -9,17 +9,50 @@ class Calculator {
     this.currentOperation = currentOperation;
     this.currentValue = ""; //armazenar o valor atual clicado
   }
+
   addToVisor(value){ //dar um set no value, que é o valor do button 
-    this.currentvalue = value;
+    this.currentValue = value;
     console.log("Valor da value: " + value)
     console.log("AddToVisor: "+ this.currentValue);//retorna nada
-    this.updateCurrentOperation();
+    this.updateScreen();
   }
 
-  updateCurrentOperation(){ //atualiza a exibição da div
-    this.currentOperation.innerText += this.currentvalue;
-    console.log("updateCurrentOperation: " + this.currentOperation.innerText);
+  updateScreen(
+    operationValue = null,
+    operation = null,
+    current = null,
+    last = null
+  ){
+      
+      if(operationValue === null){
+          this.currentOperation.innerText += this.currentValue;
+          console.log(this.currentOperation.innerText + this.currentValue);
+          console.log("UpdateScreen: "+ `${this.currentValue+= this.currentValue}`);
+    }else{
+            // if(last === 0){
+                operationValue = current;
+                console.log("operationValue do updateScreen: "+operationValue);
+        // }
+        this.lastOperation.innerText = `${operationValue} ${operation}`;
+        this.currentOperation.innerText = "";
+    }
   }
+
+////Last functions
+//   updateCurrentOperation(){ //atualiza a exibição da div CurrentOperation
+//     this.currentOperation.innerText += this.currentvalue;
+//     console.log("updateCurrentOperation: " + this.currentOperation.innerText);
+//   }
+
+//   updateLastOperation(){
+//     const currentText = this.currentOperation.innerText;
+//     this.lastOperation.innerText = currentText ;
+
+//     console.log("updateLastOperation: " + this.lastOperation.innerText )
+//   }
+
+
+
 }
 const calculator = new Calculator(lastOperation, currentOperation);
 
@@ -49,13 +82,19 @@ const calculator = new Calculator(lastOperation, currentOperation);
 
 btns.forEach((btn) =>{
     btn.addEventListener("click", (event) => {
-        const value = event.target.dataset.btn;
-
+        const value = event.target.innerText;
+        // const value = event.target.dataset.btn;
         if(value >= 0 || value === "."){
             console.log("botão clicado: "+ value);
             calculator.addToVisor(value);
-        }else{
+        }else {
+            if(value === "=") {
+                 const operationValue = currentOperation.innerText;
+                const operation = value;
+                console.log("operationValue depois que clica no =: "+operationValue)
 
+                calculator.updateScreen(operationValue, operation);
+            }
         }
     })
 })
